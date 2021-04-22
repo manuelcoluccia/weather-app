@@ -1,0 +1,138 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background:linear-gradient( rgba(11, 146, 209, 0.801) 0%, rgba(255,252,252,0.9009978991596639) 41%), url(./img/clouds.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+
+    
+
+.search-box{
+    display: block;
+    height: 55px;
+    width: 345px;
+    border: none;
+    border-radius: 26px;
+    background: #e0e0e0;
+    box-shadow: inset -5px 5px 10px #a4a4a4,inset 335px -5px 10px #ffffff;
+    outline: none;
+    padding-left: 40px;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+::placeholder{
+    padding-left: 20px;
+}
+
+.card-custom{
+    height: 300px;
+    width: 300px;
+    border-radius: 46px;
+    background: #06a8e9e1;
+    box-shadow:  -29px 29px 58px #a4a4a4,29px -29px 58px #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  
+}
+
+.date{
+    font-weight: 900;
+}
+
+.city{
+    margin-top: 20px;
+    border-radius: 41px;
+    background: #e0e0e0;
+    box-shadow: inset -5px 5px 10px #a4a4a4,inset 5px -5px 10px #ffffff;    
+}
+
+.weather-icon{
+    backface-visibility: hidden;
+}
+
+
+.temp{
+    font-size: 40px;
+}
+
+.weather{
+    font-size: 20px;
+}
+
+
+
+.card1{
+    height: 300px;
+    width: 300px;
+    perspective: 600px;
+    -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+   
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 46px;
+    box-shadow:  -29px 29px 58px #a4a4a4,19px 99px 58px #ffffff;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: 1s;
+    
+
+}
+
+
+.card-inner:hover{
+    transform:translate(-100%) rotateY(-180deg);
+
+}
+
+.card-inner-front{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border-radius: 46px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    backface-visibility: hidden;
+    background: #06a8e9e1;
+    z-index: 1;
+    
+}
+
+.card-inner-back{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border-radius: 46px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 3px;
+    backface-visibility: hidden;
+    background: #06a8e9e1;
+    transform: rotateY(180deg);
+    z-index: 999;
+    color: white;
+    
+}
+
+.text-custom{
+    margin-top: 40px;
+}
+
